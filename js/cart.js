@@ -79,3 +79,14 @@ function saveCardValues() {
 
 
 saveCardValues()
+
+
+function proceedToCheckout() {
+    const checkoutButton = document.getElementById("proceedToCheckout");
+    if (!checkoutButton) return; 
+    checkoutButton.addEventListener("click", () => {
+        window.location.href = "checkout.html"; 
+    });
+}
+
+proceedToCheckout()
